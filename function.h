@@ -6,11 +6,11 @@ using namespace std;
 class bangun
 {
  protected:
-       double x,y,z;
+   double x,y,z;
        
   public:
-       virtual void get_data()=0;
-       virtual void display_area()=0;
+    virtual void get_data()=0;
+    virtual void display_area()=0;
 };
 
 class segitiga: public bangun
@@ -18,7 +18,7 @@ class segitiga: public bangun
    public:
     void get_data(void)
     {
-	   cout<<"Menghitung panjang sisi dengan pytagoras \n\n";
+       cout<<"Menghitung panjang sisi dengan pytagoras \n\n";
        cout<<"masukkan nilai a = "; cin>>x;
        cout<<"masukkan nilai b = "; cin>>y;
     }
